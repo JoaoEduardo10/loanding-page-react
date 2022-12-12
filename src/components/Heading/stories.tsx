@@ -7,7 +7,7 @@ export default {
 	title: 'Heading',
 	component: Heading,
 	args: {
-		children: 'Olá amigo'
+		text: 'Olá amigo'
 	} as HeadingProps,
 	decorators: [
 		(Story) => (
@@ -15,9 +15,31 @@ export default {
 				<Story />
 			</ThemeProvider>
 		)
-	]
+	],
+	parameters: {
+		backgrounds: {
+			default: 'ligth'
+		}
+	}
+	
 } as Meta;
 
-export const Tamplate: ComponentStory<typeof Heading> = (agrs: HeadingProps) => {
+export const Ligth: ComponentStory<typeof Heading> = (agrs: HeadingProps) => {
 	return <Heading {...agrs} />;
+};
+
+export const Dark: ComponentStory<typeof Heading> = (agrs: HeadingProps) => {
+	return <Heading {...agrs} darkColor={true} />;
+};
+
+Ligth.parameters = {
+	backgrounds: {
+		default: 'ligth'
+	}
+};
+
+Dark.parameters = {
+	backgrounds: {
+		default: 'dark'
+	}
 };

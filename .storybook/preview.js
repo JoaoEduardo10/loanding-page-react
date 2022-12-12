@@ -1,3 +1,5 @@
+import { theme } from '../src/styles/theme'
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +8,17 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  backgrounds: {
+    default: "ligth",
+    values: [
+      {
+      name: "ligth",
+      value: theme.colors.white,
+      },
+      {
+        name: "dark",
+        value: theme.colors.primaryColor,
+        },
+    ]
+  }
 }
