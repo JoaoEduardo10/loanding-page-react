@@ -24,6 +24,16 @@ export type ThemeProps = {
     },
     media: {
         lteMedia: string
+    },
+    spacings: {
+        small: string
+        xsmall: string
+        medium: string
+        large: string
+        xlarge: string
+        xxlarge: string
+        huge: string
+        xhuge: string
     }
 }
 
@@ -51,5 +61,15 @@ export const theme: ThemeProps = {
 	},
 	media: {
 		lteMedia: '(max-width: 768px)'
+	},
+	spacings: {
+		small: '1.6rem',
+		xsmall: '8rem',
+		medium: '2.4rem',
+		large: '3.2rem',
+		xlarge: '4.0rem',
+		xxlarge: '4.8rem',
+		huge: '5.6rem',
+		xhuge: '6.4rem',
 	}
 };
