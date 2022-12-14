@@ -7,7 +7,7 @@ import { GlobalStyled } from '../../styles/globalStyles';
 
 describe('<Heading />', () => {
 	it('should render a Heading', () => {
-		renderTheme(<Heading text="Children" />);
+		renderTheme(<Heading>Children</Heading>);
 
 		const heading = screen.getByRole('heading', { name: 'Children' });
 
@@ -17,7 +17,7 @@ describe('<Heading />', () => {
 	});
 
 	it('should render another color and uppercases true', () => {
-		renderTheme(<Heading text="Children" darkColor={true} uppercase={true} />);
+		renderTheme(<Heading darkColor={true} uppercase={true}>Children</Heading>);
 
 		const heading = screen.getByRole('heading', { name: 'Children' });
         
@@ -26,7 +26,7 @@ describe('<Heading />', () => {
 	});
 
 	it('should render all font sizes', () => {
-		const { rerender } = renderTheme(<Heading text="Children" size='medium' />);
+		const { rerender } = renderTheme(<Heading size='medium'>Children</Heading>);
 
 		const heading = screen.getByRole('heading', { name: 'Children' });
         
@@ -34,7 +34,7 @@ describe('<Heading />', () => {
 
 		rerender(
 			<ThemeProvider theme={theme}>
-				<Heading text="Children" size='small' />
+				<Heading size='small'>Children</Heading>
 				<GlobalStyled />
 			</ThemeProvider>
 		);
@@ -42,7 +42,7 @@ describe('<Heading />', () => {
 
 		rerender(
 			<ThemeProvider theme={theme}>
-				<Heading text="Children" size='huge' />
+				<Heading size='huge'>Children</Heading>
 				<GlobalStyled />
 			</ThemeProvider>
 		);
@@ -53,7 +53,7 @@ describe('<Heading />', () => {
 	});
 
 	it('should render Heading correct', () => {
-		const { container } = renderTheme(<Heading as="h6" text="Children" />);
+		const { container } = renderTheme(<Heading as="h6">Children</Heading>);
 		const h6 = container.querySelector('h6');
 
 		expect(h6?.tagName.toLowerCase()).toBe('h6');

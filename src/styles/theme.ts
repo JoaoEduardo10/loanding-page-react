@@ -5,6 +5,7 @@ export type ThemeProps = {
         primaryColor: string
         secondaryColor: string
         white: string
+        mediumGray: string
     },
     font: {
         family: {
@@ -42,6 +43,7 @@ export const theme: ThemeProps = {
 		primaryColor: '#0A1128',
 		secondaryColor: '#dc143c',
 		white: '#fff',
+		mediumGray: '#DDDDDD'
 	},
 	font: {
 		family: {

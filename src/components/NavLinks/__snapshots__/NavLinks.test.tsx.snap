@@ -50,7 +50,7 @@ exports[`<NavLinks /> should render all links 1`] = `
   }
 }
 
-<div
+<nav
   class="c0"
 >
   <a
@@ -123,5 +123,5 @@ exports[`<NavLinks /> should render all links 1`] = `
   >
     Link 10
   </a>
-</div>
+</nav>
 `;

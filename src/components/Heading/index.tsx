@@ -1,14 +1,15 @@
 import * as S from './styles';
+import { ReactNode } from 'react';
 
 export type HeadingProps = {
-    text: string
+    children: ReactNode
     darkColor?: boolean
     as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' 
     size?: 'big' | 'small' | 'medium' | 'huge'
     uppercase?: boolean
 }
 
-export const Heading = ({ text, darkColor= false, as='h1', size='big', uppercase= false }: HeadingProps) => {
+export const Heading = ({ children, darkColor= false, as='h1', size='big', uppercase= false }: HeadingProps) => {
 	return (
 		<S.Title 
 			darkColor={darkColor}
@@ -16,7 +17,7 @@ export const Heading = ({ text, darkColor= false, as='h1', size='big', uppercase
 			size={size}
 			uppercase={uppercase}
 		>
-			{text}
+			{children}
 		</S.Title>
 	);
 };
