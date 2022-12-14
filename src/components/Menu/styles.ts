@@ -3,8 +3,13 @@ import styled, { css } from 'styled-components';
 import { Conteiner as SectionConteiner } from '../SectionConteiner/styles';
 import { Title as Heading } from '../Heading/styles';
 
-export const Conteiner = styled.aside`
-    ${({ theme }) => css`
+const menuVisible = () => css`
+    visibility: visible;
+    opacity: 1;
+`;
+
+export const Conteiner = styled.aside<{ visible: boolean }>`
+    ${({ theme, visible }) => css`
         position: fixed;
         top: 0;
         left: 0;
@@ -15,6 +20,7 @@ export const Conteiner = styled.aside`
         border-bottom: 0.1rem solid ${theme.colors.mediumGray};
         background-color: ${theme.colors.white};
         overflow-y: auto;
+        transition: all 300ms ease-in-out;
 
         > ${SectionConteiner} {
             padding-top: 0;
@@ -28,6 +34,9 @@ export const Conteiner = styled.aside`
 
         @media ${theme.media.lteMedia} {
             height: 100vh;
+            visibility: hidden;
+            opacity: 0;
+            ${visible && menuVisible()}
 
             ${SectionConteiner} {
                 display: grid;
@@ -40,6 +49,7 @@ export const Conteiner = styled.aside`
             & ${Heading} {
                 display: flex;
                 justify-content: center;
+                margin-bottom: ${theme.spacings.large};
             }
         }
     `}
@@ -61,6 +71,27 @@ export const MenuConteiner = styled.div`
 
 export const Button = styled.button`
     ${({ theme }) => css`
+        z-index: 6;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        width: 4rem;
+        height: 4rem;
+        background-color: ${theme.colors.primaryColor};
+        color: ${theme.colors.white};
+        border: none;
+        display: none;
+        cursor: pointer;
 
+        @media ${theme.media.lteMedia} {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        > svg {
+            width: 2.5rem;
+            height: 2.5rem  
+        }
     `}
 `;

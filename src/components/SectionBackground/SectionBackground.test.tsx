@@ -1,23 +1,23 @@
-import { SectionBackground } from '.';
-import { theme } from '../../styles/theme';
-import { renderTheme } from '../../utils/renderTheme';
+import { SectionBackground } from ".";
+import { theme } from "../../styles/theme";
+import { renderTheme } from "../../utils/renderTheme";
 
-describe('<SectionBackground />', () => {
-	it('should render background color white', () => {
-		const { container } = renderTheme(
-			<SectionBackground>Children</SectionBackground>
-		);
+describe("<SectionBackground />", () => {
+  it("should render background color white", () => {
+    const { container } = renderTheme(
+      <SectionBackground>Children</SectionBackground>
+    );
 
-		expect(container.firstChild).toHaveStyleRule(
-			'background-color',
-			theme.colors.white
-		);
-		expect(container.firstChild).toHaveStyleRule(
-			'color',
-			theme.colors.primaryColor
-		);
+    expect(container.firstChild).toHaveStyleRule(
+      "background-color",
+      theme.colors.white
+    );
+    expect(container.firstChild).toHaveStyleRule(
+      "color",
+      theme.colors.primaryColor
+    );
 
-		expect(container.firstChild).toMatchInlineSnapshot(`
+    expect(container.firstChild).toMatchInlineSnapshot(`
       .c1 {
         max-width: 120rem;
         margin: 0 auto;
@@ -41,27 +41,27 @@ describe('<SectionBackground />', () => {
       <section
         class="c0"
       >
-        <section
+        <div
           class="c1"
         >
           Children
-        </section>
+        </div>
       </section>
     `);
-	});
+  });
 
-	it('should render background color black', () => {
-		const { container } = renderTheme(
-			<SectionBackground background>Children</SectionBackground>
-		);
+  it("should render background color black", () => {
+    const { container } = renderTheme(
+      <SectionBackground background>Children</SectionBackground>
+    );
 
-		expect(container.firstChild).toHaveStyleRule(
-			'background-color',
-			theme.colors.primaryColor
-		);
-		expect(container.firstChild).toHaveStyleRule('color', theme.colors.white);
+    expect(container.firstChild).toHaveStyleRule(
+      "background-color",
+      theme.colors.primaryColor
+    );
+    expect(container.firstChild).toHaveStyleRule("color", theme.colors.white);
 
-		expect(container.firstChild).toMatchInlineSnapshot(`
+    expect(container.firstChild).toMatchInlineSnapshot(`
       .c1 {
         max-width: 120rem;
         margin: 0 auto;
@@ -87,12 +87,12 @@ describe('<SectionBackground />', () => {
       <section
         class="c0"
       >
-        <section
+        <div
           class="c1"
         >
           Children
-        </section>
+        </div>
       </section>
     `);
-	});
+  });
 });

@@ -7,7 +7,7 @@ export default {
 	title: 'Heading',
 	component: Heading,
 	args: {
-		text: 'Olá amigo'
+		children: 'Olá amigo'
 	} as HeadingProps,
 	decorators: [
 		(Story) => (

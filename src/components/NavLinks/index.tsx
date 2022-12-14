@@ -9,7 +9,7 @@ export type NavLinksProps = {
 
 export const NavLinks = ({ links }: NavLinksProps) => {
 	return (
-		<S.Conteiner>
+		<S.Conteiner aria-label='Main menu'>
 			{
 				links.map(link => (
 					<MenuLink key={link.link} {...link} />

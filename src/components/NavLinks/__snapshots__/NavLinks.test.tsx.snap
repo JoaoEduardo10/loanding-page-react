@@ -51,6 +51,7 @@ exports[`<NavLinks /> should render all links 1`] = `
 }
 
 <nav
+  aria-label="Main menu"
   class="c0"
 >
   <a
