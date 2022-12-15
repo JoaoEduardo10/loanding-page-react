@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GridTwoColumn /> should render GridTwoColumn with background black 1`] = `
+.c5 {
+  color: #fff;
+  font-size: 4.0rem;
+  text-transform: none;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c0 {
+  background-color: #fff;
+  color: #0A1128;
+  background-color: #0A1128;
+  color: #fff;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-size: 2.4rem;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.c2 .c4 {
+  margin-bottom: 4.0rem;
+}
+
+@media (max-width:768px) {
+  .c2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    margin-bottom: 3.2rem;
+  }
+}
+
+<section
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <h1
+          class="c4 c5"
+        >
+          GridTwoColumn
+        </h1>
+        <p
+          class="c6"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum maxime distinctio illo pariatur incidunt omnis, molestias, dolores facere qui autem eos laboriosam quam voluptatibus placeat itaque, dolore similique alias perspiciatis!
+        </p>
+      </div>
+      <div
+        class=""
+      >
+        <img
+          alt="GridTwoColumn"
+          class=""
+          src="assets/images/javascript.svg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`<GridTwoColumn /> should render GridTwoColumn with background white 1`] = `
+.c5 {
+  color: #0A1128;
+  font-size: 4.0rem;
+  text-transform: none;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c0 {
+  background-color: #fff;
+  color: #0A1128;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-size: 2.4rem;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.c2 .c4 {
+  margin-bottom: 4.0rem;
+}
+
+@media (max-width:768px) {
+  .c2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    margin-bottom: 3.2rem;
+  }
+}
+
+<section
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <h1
+          class="c4 c5"
+        >
+          GridTwoColumn
+        </h1>
+        <p
+          class="c6"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum maxime distinctio illo pariatur incidunt omnis, molestias, dolores facere qui autem eos laboriosam quam voluptatibus placeat itaque, dolore similique alias perspiciatis!
+        </p>
+      </div>
+      <div
+        class=""
+      >
+        <img
+          alt="GridTwoColumn"
+          class=""
+          src="assets/images/javascript.svg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;

@@ -1,12 +1,11 @@
-import { ReactNode } from 'react';
 import * as S from './styles';
 
 export type TextComponentProps = {
-    children: ReactNode
+    children: string
 }
 
 export const TextComponent = ({ children }: TextComponentProps) => {
 	return (
-		<S.Conteiner>{children}</S.Conteiner>
+		<S.Conteiner dangerouslySetInnerHTML={{ __html: children }} />
 	);
 };

@@ -19,5 +19,19 @@ export const GlobalStyled = createGlobalStyle`
 
     h1, h2, h3, h4, h5, h6 {
         font-family: ${theme.font.family.secondary};
+        margin: ${theme.spacings.large} 0;
+    }
+    
+    p {
+        margin: ${theme.spacings.large} 0;
+    }
+
+    ul, ol {
+        margin: ${theme.spacings.medium};
+        padding: ${theme.spacings.medium};
+    }
+
+    a {
+        color: ${theme.colors.secondaryColor};
     }
 `;
