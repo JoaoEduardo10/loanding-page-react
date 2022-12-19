@@ -13,7 +13,7 @@ export const GridContent = ({ html, title, background= false }: GridContentProps
 	return (
 		<SectionBackground background={background}>
 			<S.Conteiner>
-				<Heading uppercase darkColor={background}>{title}</Heading>
+				<Heading uppercase darkColor={background} as="h2">{title}</Heading>
 				<S.Html>
 					<TextComponent>{html}</TextComponent>
 				</S.Html>

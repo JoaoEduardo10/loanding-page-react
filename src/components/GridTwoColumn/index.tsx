@@ -15,7 +15,7 @@ export const GridTwoColumn = ({ text, srcImg, title, background= false }: GridTw
 		<SectionBackground background={background}>
 			<S.Conteiner>
 				<S.TextConteiner>
-					<Heading darkColor={background}>{title}</Heading>
+					<Heading darkColor={background} as="h2">{title}</Heading>
 					<TextComponent>{text}</TextComponent>
 				</S.TextConteiner>
 				<S.ImageConteiner>

@@ -3,19 +3,19 @@ import { SectionBackground } from '../SectionBackground';
 import { TextComponent } from '../TextComponent';
 import * as S from './styles';
 
-type gridArreyProps = {
-    title: string
-    description: string
+type Props = {
+    altText: string
+    srcImg: string
 }
 
-export type GridTextProps = {
+export type GridImageProps = {
     background?: boolean
     title: string
     description: string
-    grid: gridArreyProps[]
+    grid: Props[]
 }
 
-export const GridText = ({ description, grid, title, background= false }: GridTextProps) => {
+export const GridImage = ({ description, grid, title, background= false }: GridImageProps) => {
 	return (
 		<SectionBackground background={background}>
 			<S.Conteiner>
@@ -24,9 +24,8 @@ export const GridText = ({ description, grid, title, background= false }: GridTe
 				<S.Grid>
 					{
 						grid.map(el => (
-							<S.GridElement key={el.title}>
-								<Heading size='medium' darkColor={background} as="h3">{el.title}</Heading>
-								<TextComponent>{el.description}</TextComponent>
+							<S.GridElement key={el.altText}>
+								<S.Image src={el.srcImg} alt={el.altText} />
 							</S.GridElement>
 						))
 					}
