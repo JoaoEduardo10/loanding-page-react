@@ -77,11 +77,11 @@ exports[`<GridTwoColumn /> should render GridTwoColumn with background black 1`]
         >
           GridTwoColumn
         </h2>
-        <p
+        <div
           class="c6"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum maxime distinctio illo pariatur incidunt omnis, molestias, dolores facere qui autem eos laboriosam quam voluptatibus placeat itaque, dolore similique alias perspiciatis!
-        </p>
+        </div>
       </div>
       <div
         class=""
@@ -172,11 +172,11 @@ exports[`<GridTwoColumn /> should render GridTwoColumn with background white 1`]
         >
           GridTwoColumn
         </h2>
-        <p
+        <div
           class="c6"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum maxime distinctio illo pariatur incidunt omnis, molestias, dolores facere qui autem eos laboriosam quam voluptatibus placeat itaque, dolore similique alias perspiciatis!
-        </p>
+        </div>
       </div>
       <div
         class=""

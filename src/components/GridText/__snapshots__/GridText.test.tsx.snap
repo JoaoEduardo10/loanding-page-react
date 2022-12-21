@@ -85,11 +85,11 @@ exports[`<GridText /> should render a GridText 1`] = `
       >
         My grid
       </h2>
-      <p
+      <div
         class="c5 c6"
       >
         Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-      </p>
+      </div>
       <div
         class="c7"
       >
@@ -101,11 +101,11 @@ exports[`<GridText /> should render a GridText 1`] = `
           >
             Teste 1
           </h3>
-          <p
+          <div
             class="c5 c6"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-          </p>
+          </div>
         </div>
         <div
           class="c8"
@@ -115,11 +115,11 @@ exports[`<GridText /> should render a GridText 1`] = `
           >
             Teste 2
           </h3>
-          <p
+          <div
             class="c5 c6"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-          </p>
+          </div>
         </div>
         <div
           class="c8"
@@ -129,11 +129,11 @@ exports[`<GridText /> should render a GridText 1`] = `
           >
             Teste 3
           </h3>
-          <p
+          <div
             class="c5 c6"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -226,11 +226,11 @@ exports[`<GridText /> should render props background 1`] = `
       >
         My grid
       </h2>
-      <p
+      <div
         class="c5 c6"
       >
         Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-      </p>
+      </div>
       <div
         class="c7"
       >
@@ -242,11 +242,11 @@ exports[`<GridText /> should render props background 1`] = `
           >
             Teste 1
           </h3>
-          <p
+          <div
             class="c5 c6"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-          </p>
+          </div>
         </div>
         <div
           class="c8"
@@ -256,11 +256,11 @@ exports[`<GridText /> should render props background 1`] = `
           >
             Teste 2
           </h3>
-          <p
+          <div
             class="c5 c6"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-          </p>
+          </div>
         </div>
         <div
           class="c8"
@@ -270,11 +270,11 @@ exports[`<GridText /> should render props background 1`] = `
           >
             Teste 3
           </h3>
-          <p
+          <div
             class="c5 c6"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
-          </p>
+          </div>
         </div>
       </div>
     </div>

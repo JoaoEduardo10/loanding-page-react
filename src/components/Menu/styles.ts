@@ -16,11 +16,11 @@ export const Conteiner = styled.aside<{ visible: boolean }>`
         bottom: 0;
         right: 0;
         width: 100%;
-        height: 100%;
+        height: 10%;
         border-bottom: 0.1rem solid ${theme.colors.mediumGray};
         background-color: ${theme.colors.white};
-        overflow-y: auto;
         transition: all 300ms ease-in-out;
+        z-index: 5;
 
         > ${SectionConteiner} {
             padding-top: 0;
@@ -36,6 +36,7 @@ export const Conteiner = styled.aside<{ visible: boolean }>`
             height: 100vh;
             visibility: hidden;
             opacity: 0;
+            overflow-y: auto;
             ${visible && menuVisible()}
 
             ${SectionConteiner} {

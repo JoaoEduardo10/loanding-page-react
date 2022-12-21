@@ -10,6 +10,8 @@ export const GlobalStyled = createGlobalStyle`
 
     html {
         font-size: 62.5%;
+        scroll-behavior: smooth;
+        width: 100vw;
     }
 
     body {
